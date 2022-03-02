@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+/*Soft reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+/*Variáveis*/
+:root {
+    --color1: #0e0e0e;
+    --color2: #111111;
+    --color3: #333333;
+    --color4: whitesmoke;
+    --color5: #0696cf;
+}
+
+/*Estilizando o body*/
+body {
+    background-image: linear-gradient(to bottom, var(--color3), var(--color2), var(--color1));
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    height: 100vh;
+    padding: 0px 20px;
+}
+
+/*Estilizando o cabeçalho*/
+header {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    justify-content: center;
+    padding: 20px 10px 10px 10px;
+}
+
+header h1 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+header a {
+    color: var(--color4);
+}
+
+/*Estilizando o menu de navegação*/
+.menu ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.menu a {
+    border-radius: 15px;
+    color: var(--color4);
+    font-size: 0.36em;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+#link-destaque {
+    border: 1px solid var(--color5);
+    border-radius: 15px;
+}
+
+.menu a:hover {
+    background-color: var(--color4);
+    color: #0E0E0E;
+    transition: .8s;
+}
+
+/*Estilizando o texto do conteúdo*/
+.conteudo h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+}
+
+#subtitle-roxo {
+    color: var(--color5);
+}
+
+#subtitle-branco {
+    color: var(--color4);
+}
+
+.conteudo p {
+    color: var(--color4);
+    font-size: .8em;
+    padding: 10px 0px;
+}
+/*Estilizando a captação de dados do conteúdo*/
+#dados-email,
+#dados-name {
+    border-radius: 10px;
+    display: block;
+    width: 150px;
+    height: 25px;
+    padding-left: 10px;
+    margin: 10px 0px;
+}
+
+#button {
+    border-radius: 10px;
+    background-color: var(--color5);
+    color: var(--color4);
+    display: block;
+    font-weight: bolder;
+    height: 25px;
+    width: 85px;
+}
+
+figure {
+    text-align: center;
+}
+
+img {
+    width: 265px;
+}
+
+@media (min-width: 537px) {
+    header {
+        font-size: 1.3em;
+    }
+
+    .menu a {
+        font-size: 0.7em;
+    }
+
+    .conteudo h2 {
+        font-size: 2.4em;
+    }
+
+    .conteudo p {
+        color: var(--color4);
+        font-size: 1em;
+        padding: 10px 0px;
+    }
+
+    .conteudo-escrito {
+        width: 500px;
+    }
+
+    #dados-email,
+    #dados-name {
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+    margin: 20px 0px;
+}
+
+    #button {
+        height: 35px;
+        width: 150px;
+    }
+
+    img {
+        width: 380px;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        padding: 0px 80px;
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+        text-align: left;
+        width: 100px;
+    }
+
+    .menu a {
+        font-size: .8em;
+        font-weight: bolder;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .conteudo {
+        display: flex;
+    }
+
+    .conteudo h2 {
+        font-size: 3.2em;
+    }
+
+    .conteudo-escrito {
+        width: 600px;
+    }
+
+    #dados-email,
+    #dados-name {
+    margin: 20px 0px;
+    }
+
+    figure {
+        width: 80vw;
+    }
+
+    img {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1070px) {
+    body {
+        padding: 0px 80px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+        text-align: left;
+        width: 100px;
+    }
+
+    .menu a {
+        font-size: .8em;
+        font-weight: bolder;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .conteudo h2 {
+        font-size: 3.5em;
+    }
+
+    .conteudo {
+        display: flex;
+    }
+
+    .conteudo-escrito {
+        width: 500px;
+    }
+
+    #dados-email,
+    #dados-name {
+    margin: 20px 0px;
+    }
+    
+    #dados-email,
+    #dados-name {
+        border-radius: 10px;
+        display: block;
+        width: 400px;
+        height: 35px;
+        padding-left: 10px;
+        margin: 20px 0px;
+    }
+
+    #button {
+        height: 40px;
+        width: 200px;
+    }
+
+    figure {
+        width: 50vw;
+    }
+
+    img {
+        width: 450px;
+    }
+}
