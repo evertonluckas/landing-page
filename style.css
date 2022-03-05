@@ -171,7 +171,7 @@ img {
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
-        padding: 20px;
+        padding: 20px 0px;
     }
 
     header h1 {
